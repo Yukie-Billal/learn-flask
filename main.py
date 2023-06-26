@@ -77,8 +77,5 @@ def hello(name=None):
     return render_template('hello.html', name=name)
 
 
-try:
-    nama = 14
-    print(f"nama saya {nama:%s}")
-except Exception as e:
-    Exception(e)
+if __name__ == '__main__':
+    app.run(debug=True)
